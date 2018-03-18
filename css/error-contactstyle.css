@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 10px 0 0 0;
+    padding-right:  10px;
+    height: 100%;
+}
+body{
+  height: 100%;
+  padding-top: 0px;
+  background: url(../pic/back2.png) no-repeat center center fixed;
+  color: #FFF;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.card {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.card-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    font-family: Bitter,serif;
+    display: inline-block;
+    float: right;
+    height:40%;
+    width: 45%;
+    padding :0px 40px 0px 0px;
+}
+.container h1{
+  text-align: center;
+  letter-spacing: 1px;
+}
+.card-container{
+  float: left;
+  display: inline-flex;
+  height:60%;
+  width: 45%;
+  padding-left: 80px;
+}
+.card {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 190px;
+    margin: 4px;
+    padding: 5px;
+    text-align: center;
+    font-family: Bitter, sans-serif;
+}
+.nav-img{
+  float: left;
+  width: 300px;
+  height: 100px;
+  padding: 0 20px;
+  float:left;
+  font-size:24px;
+  transition: .3s;
+
+}
+
+nav{
+  width: 100%;
+  background: transparent;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+  transition: all ease .5s;
+}
+
+ul{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 20px 20px 10px 20px;
+  float: right;
+  font-size: 17px;
+  color: #fff;
+  display: inline-block;
+  margin:0px;
+}
+ul li a:hover{
+  background-color: white;
+  color: black;
+  border-radius:5px;
+  text-decoration: none;
+}
+ul li a{
+  color: white;
+  text-decoration: none;
+  float: right;
+  padding: 10px 10px 10px 10px;
+}
+.register{
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.register:hover{
+  background-color: white;
+  color: red;
+}
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+    color: black;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+.text {
+  color: white;
+  font-size: 15px;
+  color:black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+nav ul li a:focus{
+  outline: none;
+}
+
+nav ul li a.active{
+  background: #E2472F;
+  color: #fff;
+  border-radius: 6px;
+}
+
+nav ul li a:hover {
+    background: #fbb917;
+    color: black;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+.card {
+  position: relative;
+  width: 90%;
+}
+
+.card-img {
+  display: block;
+  width: 90%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #A8A8DC;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  color:black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-container-after{
+  display: none;
+}
+
+@media (max-width: 768px)
+{
+  .toggle{
+    display: block;
+  }
+  .toggle:hover{
+    cursor: pointer;
+  }
+  ul{
+    width: 100%;
+    display: none;
+  }
+  ul li{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .active{
+    display: block;
+  }
+
+  /*for the page layout*/
+  .container{  
+    float: none;     
+    width: 100%;     
+    padding:40px 5px 0 5px;
+    margin:0;   
+  }  
+  .card-container{     
+    display: none;   
+  } 
+  .card-container-after{ 
+    font-family: Bitter,sans-serif; 
+    display: inline-block;
+    width: 100%;   
+  } 
+  .card1{
+    background-color: rgba(161, 223, 241, 0.3);
+    border-radius: 5%;
+    color: #000;
+    text-align: center;
+    margin: 20px;
+    padding: 20px 5px 20px 5px;
+    overflow: auto;
+    -webkit-overflow-scroling:touch;
+  } 
+  .card-img{
+    height: 200px;     
+    width: auto;   
+  } 
+  button{
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .fa1{
+    color: #000;
+    padding: 10px;
+  }
+}
