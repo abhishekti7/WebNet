@@ -1,0 +1,71 @@
+
+body {
+  background-color: #0C090A;
+}
+
+/* The right side navigation menu */
+.rightnav {
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  top: 210px;
+  left: 260px;
+  background-color: #0C090A;
+  padding-top: 10px;
+  padding-left: 50px;
+  text-align:center;  
+}
+
+/* Page content */
+.main {
+  margin-top: 100px;
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+/* The navigation menu links */
+.rightnav a {
+	width:150px;
+	height:150px;
+    text-decoration: none;
+	background-color: #3090C7;
+    font-size: 17px;
+	text-shadow: 0.5px 0.25px yellow;
+    color: #ffffff;
+    display: block;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius:4px; 
+    border: solid rgba(255,255,255,.20);	
+    background: -webkit-linear-gradient(left top, #000000, #461B7E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #000000, #461B7E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #000000, #461B7E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #000000, #461B7E); /* Standard syntax (must be last) */
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.rightnav a:hover {
+    color: #D1D0CE;
+	background-color:#0041C2; /* For browsers that do not support gradients */
+	border-bottom: 2px solid transparent;
+	background: -webkit-linear-gradient(left top, #151B54, #0041C2 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #151B54, #0041C2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #151B54, #0041C2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #151B54, #0041C2); /* Standard syntax (must be last) */
+}
+
+img {
+	padding: 5px 5px 5px;
+	width:140px;
+	height:140px;
+	position:center;
+	display:block;
+	margin:auto;
+}
+
+h4 {
+	vertical-align: center;
+	color: #D1D0CE;
+}

@@ -1,0 +1,177 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: verdana;
+	background-image: url(../pic/back2.png);
+	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+	font-family: 'Roboto', monospace;
+}
+
+nav{
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	padding: 6px 50px;
+	box-sizing: border-box;
+	transition: .3s;
+}
+
+nav .logo {
+	padding: 0 20px;
+	float:left;
+	font-size:24px;
+	transition: .3s;
+	
+}
+
+nav ul {
+	list-style:none;
+	float:right;
+	margin:0;
+	padding:20px 10px;
+	display:flex;
+}
+
+nav ul li {
+	list-style:none;
+}
+
+nav ul li a{
+	line-height: 60px;
+	color: #151515;
+	padding: 12px 25px;
+	text-decoration:none;
+	text-transform:Uppercase;
+	color: white;
+	font-size: 17px;
+}
+
+nav ul li a:focus{
+	outline: none;
+}
+
+nav ul li a.active{
+	background: #E2472F;
+	color: #fff;
+	border-radius: 6px;
+}
+
+nav ul li a:hover {
+    background: #fbb917;
+    color: black;
+	border-radius:6px;
+}
+
+.img1{
+	height: 100px;
+  width: 340px;
+  right: 20px;
+  padding: 0 0 40px 0;
+}
+
+nav .ev {
+	padding: 90px 0 0 10px;
+	float: left;
+	transition: .3s;
+	height: 200px;
+  width: 480px;
+}
+
+.events{
+	height: 200px;
+  width: 480px;
+}
+
+nav p {
+	text-align: center;
+	text-decoration:none;
+	float: center;
+	padding: 350px 0 0 100px;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 2px 2px #357ec7;
+}
+
+#fullpage{
+	height: 100vh;
+	overflow: hidden;
+}
+
+#fullpage section{
+	height: 100vh;
+}
+
+#fullpage section h1{
+	margin: 0;
+	float:left;
+	width:100%;
+	line-height: 100px;
+	padding-left: 40px;
+	padding-top: 40px;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+#fullpage section p{
+	float:left;
+	padding-left:50px;
+	width:40%;
+}
+
+#fullpage section p a{
+	float:left;
+	padding-left:20px;
+	line-height:50px;
+	width:110px;
+	background-color:#E2472F;
+	text-decoration:none;
+	color:white;
+	font-size:17px;
+	border-radius:8px;
+}
+
+
+#fullpage section:nth-child(1) {
+	background-image: url(../pic/csgo.png);				/*Doesnt count this nth child*/
+	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;     
+}
+#fullpage section:nth-child(2) {
+	background-image: url(../pic/csgo.png);
+	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+	color:white;
+}
+#fullpage section:nth-child(3) {
+	background-image: url(../pic/code4.jpg);
+	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+	color:white;
+}
+#fullpage section:nth-child(4) {
+	background-image: url(../pic/innovation.jpg);
+	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+#fullpage section:nth-child(5) {
+	background-image: url(../pic/photo.jpg);
+	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+	color:white;
+}
+
+#fullpage section:nth-child(6) {
+	background-image: url(../pic/rob.jpg);
+	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+	

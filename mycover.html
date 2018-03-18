@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+
+<style type="text/css">
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+.stars,
+.twinkling{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.stars {
+  background: #000 url(http://sylvaingarnot.fr/media/stars.png) repeat top center;
+  z-index: 0;
+}
+.twinkling {
+  background: transparent url(http://sylvaingarnot.fr/media/twinkling.png) repeat top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+/*.clouds {
+  background: transparent url(http://sylvaingarnot.fr/media/clouds.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}*/
+.had{
+  position: relative; /* center causes animation */
+  z-index: 4;
+  text-align: center;
+  color: white;
+  display: block;
+  font-family: Montserrat, cursive;
+}
+.fa-power-off, .fa{
+  padding-top: 50px;
+}
+.img{
+  opacity: 0.85;
+  display: block;
+  margin: 0 auto;
+}
+.img1{
+  height: 140px;
+  width: 460px;
+  right: 20px;
+  padding: 10px 0 40px 0;
+}
+.img2{
+  float: right;
+  height: 60px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+.Totalcontainer{
+	vertical-align:middle;
+}
+.img3{
+  height: 150px;
+  width: 300px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  }
+.media-off{
+    display: none;
+  }
+@media only screen and (max-width: 550px){
+    .mob{
+      height: 155px;
+      padding-top: 20px;
+      width: 200px;
+    }
+    .short{
+      width: 220px;
+      height: 100px;
+      padding-bottom: 0px;
+    }
+    .media-on{
+      display: none;
+    }
+    .media-off{
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      display: block;
+      color: white;
+    }
+  }
+	
+</style>
+
+<head >
+
+	<div class="stars"></div>
+	<div class="twinkling"></div>
+
+	<!--<div class="clouds"></div>-->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="13.jpeg" />
+    <title>Geektime</title>
+
+</head>
+
+<body>
+
+	<div class="collegelogo">
+			<a href="http://www.iiitkalyani.ac.in" target="_blank"><img class="had img2 img" src="images/13.jpeg"></a>
+	</div>
+	<div class="Totalcontainer">
+		<div class="welcomebox">
+			<img class="had img3 img short" src="pic/Welcome_Transparent.png">
+		</div>
+		
+		<div class="techlogo">
+			<img class="had img1 img short" src="images/logo.jpg" alt="Logo">
+		</div>
+	</div>
+	<div class="media-on">
+    <a  class="had" href="cover.html"><i class="fa fa-power-off fa-3x"></i></a>
+	</div>
+	<div class="media-off">
+    <a  class="had" href="error.html"><i class="fa fa-power-off fa-3x"></i></a>
+	</div>
+  
+</body>
